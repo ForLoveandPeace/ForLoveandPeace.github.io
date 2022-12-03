@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import url("../../../css/reset.css");
 @import url("../../../css/border.css");
 @import url("../../../css/global.css");
@@ -142,7 +144,7 @@
 	margin: 0 .1rem;
 }
 .step.line::after {
-	content: "â€”â€”";
+	content: "——";
 	margin: .1rem;
 }
 /** step start **/

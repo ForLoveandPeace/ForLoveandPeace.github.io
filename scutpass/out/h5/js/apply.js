@@ -1,10 +1,10 @@
 'use strict';
 window.onload = function() {
 	//测试数据
-	Global_VAR.sTest = SysUtils.getUrlParams("sTest");
-	if(Global_VAR.sTest != undefined) {
-		Global_VAR.initData = "http://127.0.0.1/door/out/h5/get"; // 初始化数据
-	}
+	// Global_VAR.sTest = SysUtils.getUrlParams("sTest");
+	// if(Global_VAR.sTest != undefined) {
+	// 	Global_VAR.initData = "http://127.0.0.1/door/out/h5/get"; // 初始化数据
+	// }
 	
 	Global_FN.render();
 }
