@@ -5,8 +5,27 @@ window.onload = function() {
 	// if(Global_VAR.sTest != undefined) {
 	// 	Global_VAR.initData = "http://127.0.0.1/door/out/h5/get"; // 初始化数据
 	// }
-	
-	Global_FN.render();
+	var date = new Date();
+	var sign1 = "-";
+	var year = date.getFullYear() // 年
+	var month = date.getMonth() + 1; // 月
+	var day = date.getDate(); // 日
+	var hour = date.getHours(); // 时
+	var minutes = date.getMinutes(); // 分
+	var seconds = date.getSeconds() // 秒
+	// var weekArr = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+	// var week = weekArr[date.getDay()];
+	// 给一位数数据前面加 “0”
+	if(month >= 1 && month <= 9) {
+		month = "0" + month;
+	}
+	if(day >= 0 && day <= 9) {
+		day = "0" + day;
+	}
+	currentdate = year + sign1 + month + sign1 + day
+	$(".dOutStartDate").text(currentdate)
+	$(".dOutEndDate").text(currentdate)
+	// Global_FN.render();
 }
 //全局变量
 var Global_VAR = {
