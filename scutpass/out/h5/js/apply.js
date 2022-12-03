@@ -27,6 +27,7 @@ window.onload = function() {
 	$(".dOutEndDate").text(currentdate)
 	// Global_FN.render();
 }
+
 //全局变量
 var Global_VAR = {
 	iWxSdkFlog: 0,
